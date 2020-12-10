@@ -4,63 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invitato: your online invitation partner!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <style>
     body,
     html {
       height: 100%;
+      width: 100%;
       margin: 0;
+      background: #36d1dc; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to bottom,
+        #5b86e5,
+        #36d1dc
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #5b86e5, #36d1dc);
+      font-family: "Nunito", sans-serif;
     }
 
-    .bgimg {
-      background-image: url("./assets/bg.jpg");
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-      color: white;
-      font-family: "Courier New", Courier, monospace;
-      font-size: 25px;
-    }
-
-    .topleft {
-      position: absolute;
-      top: 0;
-      left: 16px;
+    .wrapper {
+      padding: 24px;
     }
 
     .bottomleft {
       position: absolute;
       bottom: 0;
-      left: 16px;
       font-size: 14px;
     }
 
     .middle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       text-align: center;
     }
 
     hr {
       margin: auto;
-      width: 40%;
+      width: 50%;
+    }
+
+    .text__top {
+      font-weight: bold;
+    }
+
+    .text__title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .text__content {
+      font-weight: 600;
+      line-height: 1.5;
     }
   </style>
 
   <!-- BODY TEKS -->
   <body>
-    <div class="bgimg">
+    <div class="wrapper">
       <div class="topleft">
-        <p>INVITATO</p>
+        <p class="text__title" style="text-align: center">INVITATO</p>
       </div>
       <div class="middle">
-        <h1>COMING SOON</h1>
+        <p class="text__top">INVITATO: Your Online Invitation Partner!</p>
         <hr />
-        <p>Your Online Invitation Partner!</p>
+        <p class="text__content">
+          Kita membuat berbagai undangan online dengan harga yang murah!
+          <br />yuk chat kami via whatsapp
+          <a
+            href="https://wa.me/+628112778189?text=Hi%20Kak,%20aku%20mau%20pesan%20undangan%20online%20nih!"
+            >+628112778189 (Dinda)</a
+          >
+        </p>
       </div>
       <div class="bottomleft">
         <p>By: Indra Kusuma</p>
