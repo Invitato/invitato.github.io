@@ -7,8 +7,9 @@
   <body></body>
   <script>
     (function () {
-      var targetURL = "https://invitato.net/temusacramentum/?code=ISC79B35BD3295";
-      var qs = window.location.search;
+      var targetURL = "https://invitato.net/temusacramentum/";
+      var qs = window.location.search || "?code=ISC79B35BD3295";
+  
       window.location.replace(targetURL + qs);
     })();
   </script>
